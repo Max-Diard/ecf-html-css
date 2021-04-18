@@ -135,8 +135,8 @@ h3{
     background-image: url(../img/hero.jpg);
     background-size: cover;
     background-position: center;
-    height: 80vh;
 }
+
 @media (min-resolution: 144dpi){
     .hero{
         background-image: url(../img/hero@2x.jpg);
@@ -145,12 +145,13 @@ h3{
 
 .hero .container{
     position: relative;
+    height: 80vh;
 }
 
 .hero-title{
-    /* position: absolute;
-    bottom: 0%; */
-    /* Demander de l'aide pour les position */
+    position: absolute;
+    bottom: 17%;
+    right: 0;
     display: flex;
     flex-direction: column;
     max-width: 95.6rem;
@@ -193,6 +194,7 @@ h3{
 .actu-title{
     margin-bottom: 4rem;
 }
+
 .box-actu{
     display: grid;
     grid-template-columns: repeat(3,1fr);
