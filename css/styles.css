@@ -184,3 +184,225 @@ h3{
 
 /* Les actualités */
 
+.last-actu{
+    text-align: center;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+.actu-title{
+    margin-bottom: 4rem;
+}
+.box-actu{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 3.2rem;
+}
+
+.card-actu{
+    box-shadow: 0px 0px 48px #00000029;
+    border-radius: 4px;
+}
+
+.card-group{
+    padding-left: 1.4rem;
+    padding-right: 1.6rem;
+    text-align: left;
+}
+
+.date-actu:before{
+    content: "";
+    display: inline-flex;
+    width: 1.6rem;
+    height: 1.8rem;
+    background-image: url(../img/icone-date.svg);
+    margin-right: .8rem;
+}
+
+.date-actu{
+    margin-top: 2.4rem;
+    margin-bottom: 1.6rem;
+    color: #663014;
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+.card-title{
+    font-weight: 600;
+}
+
+.read-more-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 2.4rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: var(--fond-section);
+    color: var(--fond-color);
+    text-decoration: none;
+}
+
+.read-more-link:hover,
+.read-more-link:focus{
+    background-color: var(--fond-color);
+    color: var(--fond-section)
+}
+
+.arrow-more{
+    margin: 0 1.5rem;
+}
+
+.read-more-link:hover img,
+.read-more-link:focus img{
+    filter: invert(52%) sepia(96%) saturate(963%) hue-rotate(336deg) brightness(102%) contrast(98%);
+}
+
+/* Les étudiants super cool */
+
+.students{
+    background-color: var(--fond-section);
+    color: var(--fond-color);
+    padding-top: 4rem;
+    padding-bottom: 4.3rem;
+    border-top: 1px solid #707070;
+    border-bottom: 1px solid #707070
+}
+
+.title-students{
+    text-align: center;
+}
+
+.students-list{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10.9rem;
+    margin-top: 4rem;
+    text-align: center;
+    margin-bottom: 4.3rem;
+}
+
+.students-img{
+    border-radius: 50%;
+    height: 21.8rem;
+    width: 21.8rem;
+}
+
+.students-text{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-weight: 600;
+    font-size: 2.4rem;
+    line-height: 1.5;
+}
+
+.students-more{
+    color: var(--fond-color);
+    font-size: 1.6rem;
+    line-height: 1.5;
+    padding: 1rem;
+}
+
+.students-more:hover,
+.students-more:focus{
+    background-color: var(--fond-color);
+    color: var(--fond-section);
+}
+
+/* Les modules au top */
+
+.modules-formation{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.formation-title{
+    text-align: center;
+    padding-bottom: 4rem;
+}
+
+.box-formation{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 3.2rem;
+}
+
+.formation-card{
+    box-shadow: 0px 0px 48px #00000029;
+    border-radius: 4px;
+}
+
+.formation-group{
+    padding-left: 1.4rem;
+    padding-right: 1.6rem;
+    text-align: left;
+}
+
+.module-title{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+/* Footer */
+
+.contact{
+    background-color: var(--fond-section);
+    color: var(--fond-color);
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    border-top: 1px solid #707070;
+}
+
+.contact-global{
+    display: flex;
+    justify-content: space-between;
+}
+
+.adresse-text{
+    font-weight: 600;
+    line-height: 1.8;
+}
+
+.mentions{
+    display: flex;
+    align-items: center;
+}
+
+.mentions-text{
+    margin-left: 2rem;
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 2.25rem;
+    text-decoration: none;
+    color: var(--fond-color);
+    padding: 1rem;
+}
+
+.mentions-text:hover,
+.mentions-text:focus{
+    color: #000;
+}
+
+.social-icons{
+    display: flex;
+    align-items: center;
+    justify-items: space-between;
+} 
+
+/* .social-link:hover img,
+.social-link:focus img{
+    filter: invert(0%) sepia(100%) saturate(7500%) hue-rotate(347deg) brightness(89%) contrast(111%);
+} */
+
+.social-img:hover,
+.social-img:focus{
+    filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(122deg) brightness(0%) contrast(100%);
+}
+
+.social-link{
+    margin-right: 6rem;
+    color: #000
+}
