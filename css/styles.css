@@ -56,7 +56,7 @@
 body{
     font-family: 'Montserrat',sans-serif;
     font-weight: 400;
-    font-size: 2rem;
+    font-size: 1.7rem;
     line-height: 1.5;
     background-color: var(--fond-color);
 }
@@ -64,21 +64,21 @@ body{
 h1{
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
-    font-size: 5rem;
+    font-size: 3rem;
     line-height: 1.2;
 }
 
 h2{
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
-    font-size: 4.8rem;
+    font-size: 2.8rem;
     line-height: 1;
 }
 
 h3{
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
-    font-size: 2.4rem;
+    font-size: 2rem;
     line-height: 1.5;
 }
 
@@ -99,6 +99,18 @@ h3{
 @media screen and (min-width: 48em) {
      .container{
           max-width: 73.8rem;
+     }
+     body{
+         font-size: 2rem;
+     }
+     h1{
+         font-size: 5rem;
+     }
+     h2{
+         font-size: 4.8rem;
+     }
+     h3{
+         font-size:2.3rem;
      }
 }
 
@@ -154,7 +166,8 @@ h3{
     left: 0;
     right: 0%;
     transform: translateX(-100%);
-	transition: transform .5s ease-in-out, visibility .001s .5s;
+	transition: transform .5s ease-in-out,
+    visibility .001s .5s;
     background-color: var(--fond-section);
 }
 
@@ -183,12 +196,13 @@ h3{
     text-decoration: none;
     text-transform: uppercase;
     font-size: 1.3rem;
+    transition: .4s;
 }
 
 .menu-link:hover,
 .menu-link:focus{
     background-color: var(--fond-color);
-    color: var(--fond-section)
+    color: var(--fond-section);
 }
 
 @media screen and (min-width: 48em) {
@@ -242,7 +256,7 @@ h3{
 .hero .container{
     display: flex;
     justify-content: center;
-    padding-top: 24rem;
+    padding-top: 10rem;
     padding-bottom: 12rem;
 }
 
@@ -262,12 +276,13 @@ h3{
     text-decoration: none;
     background-color: var(--fond-section);
     color: var(--fond-color);
-    font-size: 3rem;
+    font-size: 1.5rem;
     font-weight: 600;
     line-height: 0.9;
     padding: 2rem 3rem;
     margin-top: 3rem;
     margin-bottom: 3rem;
+    transition: .4s;
 }
 
 .cta:hover,
@@ -275,9 +290,16 @@ h3{
     background-color: var(--fond-color);
     color: var(--fond-section);
 }
+
+@media screen and (min-width: 48em) {
+    .cta{
+        font-size: 3rem;
+    }
+}
 @media screen and (min-width: 62em) {
     .hero .container{
         justify-content: flex-end;
+        padding-top: 24rem;
     }
     .hero-title{
         max-width: 95.6rem;
@@ -286,7 +308,7 @@ h3{
     .cta{
         font-size: 4rem;
     }
-
+}
 
 /* Les actualités */
 
@@ -302,13 +324,17 @@ h3{
 
 .box-actu{
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(1,1fr);
     gap: 3.2rem;
 }
 
 .card-actu{
     box-shadow: 0px 0px 48px #00000029;
     border-radius: .4rem;
+}
+
+.card-img img{
+    width: 100%;
 }
 
 .card-group{
@@ -349,12 +375,13 @@ h3{
     background-color: var(--fond-section);
     color: var(--fond-color);
     text-decoration: none;
+    transition: .4s;
 }
 
 .read-more-link:hover,
 .read-more-link:focus{
     background-color: var(--fond-color);
-    color: var(--fond-section)
+    color: var(--fond-section);
 }
 
 .arrow-more{
@@ -364,6 +391,15 @@ h3{
 .read-more-link:hover img,
 .read-more-link:focus img{
     filter: invert(52%) sepia(96%) saturate(963%) hue-rotate(336deg) brightness(102%) contrast(98%);
+    transition: .4s;
+}
+@media screen and (min-width: 48em) {
+
+}
+@media screen and (min-width: 62em) {
+    .box-actu{
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
 /* Les étudiants super cool */
@@ -374,7 +410,7 @@ h3{
     padding-top: 4rem;
     padding-bottom: 4.3rem;
     border-top: 1px solid #707070;
-    border-bottom: 1px solid #707070
+    border-bottom: 1px solid #707070;
 }
 
 .title-students{
@@ -383,8 +419,8 @@ h3{
 
 .students-list{
     display: grid;
-    grid-template-columns: repeat(4,1fr);
-    gap: 10.9rem;
+    grid-template-columns: repeat(1,1fr);
+    gap: 5rem;
     margin-top: 4rem;
     text-align: center;
     margin-bottom: 4.3rem;
@@ -396,6 +432,10 @@ h3{
     width: 21.8rem;
 }
 
+.students-card{
+    display: flex;
+    justify-content: center;
+}
 .students-text{
     margin-top: 2rem;
     margin-bottom: 2rem;
@@ -409,6 +449,7 @@ h3{
     font-size: 1.6rem;
     line-height: 1.5;
     padding: 1rem;
+    transition: .4s;
 }
 
 .students-more:hover,
@@ -416,7 +457,28 @@ h3{
     background-color: var(--fond-color);
     color: var(--fond-section);
 }
+@media screen and (min-width: 36em){
+    .students-list{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .students-img{
+        height: 15rem;
+        width: 15rem;
+    }
+}
 
+@media screen and (min-width: 62em) {
+    .students-list{
+        grid-template-columns: repeat(4,1fr);
+        gap: 10.9rem;
+    }
+}
+@media screen and (min-width: 75em) {
+    .students-img{
+        height: 21.8rem;
+        width: 21.8rem;
+    }
+}
 /* Les modules au top */
 
 .modules-formation{
@@ -431,7 +493,7 @@ h3{
 
 .box-formation{
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(1,1fr);
     gap: 3.2rem;
 }
 
@@ -452,6 +514,12 @@ h3{
     font-weight: 600;
     line-height: 1.5;
 }
+@media screen and (min-width: 36em){
+    .box-formation{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
 
 /* Footer */
 
@@ -465,7 +533,10 @@ h3{
 
 .contact-global{
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
+    text-align: center;
+    align-items: center;
 }
 
 .adresse-text{
@@ -476,6 +547,7 @@ h3{
 .mentions{
     display: flex;
     align-items: center;
+    padding: 3rem 0;
 }
 
 .mentions-text{
@@ -486,6 +558,7 @@ h3{
     text-decoration: none;
     color: var(--fond-color);
     padding: 1rem;
+    transition: .4s;
 }
 
 .mentions-text:hover,
@@ -497,14 +570,32 @@ h3{
 .social-icons{
     display: flex;
     align-items: center;
-    justify-items: space-between;
 } 
 
+.social-img,
 .social-link{
+    transition: .4s;
+}
+
+.social-link:not(:nth-child(3)){
     margin-right: 6rem;
 }
 
 .social-img:hover,
 .social-link:focus{
     filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(122deg) brightness(0%) contrast(100%);
+    transition: .4s;
+}
+
+@media screen and (min-width: 62em){
+    .contact-global{
+        flex-direction: row;
+        text-align: left;
+    }
+    .mentions{
+        padding: 0;
+    }
+    .social-link{
+        margin-right: 6rem;
+    }
 }
