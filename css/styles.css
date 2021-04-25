@@ -331,6 +331,11 @@ h3{
 .card-actu{
     box-shadow: 0px 0px 48px #00000029;
     border-radius: .4rem;
+    transition: .5s ease;
+}
+
+.card-actu:hover{
+    transform: translate(-10px, -20px);
 }
 
 .card-img img{
@@ -375,23 +380,25 @@ h3{
     background-color: var(--fond-section);
     color: var(--fond-color);
     text-decoration: none;
-    transition: .4s;
+    transition: .2s;
 }
 
 .read-more-link:hover,
 .read-more-link:focus{
     background-color: var(--fond-color);
-    color: var(--fond-section);
+    color: var(--fond-section);    
+    transition: .2s;
 }
 
 .arrow-more{
-    margin: 0 1.5rem;
+    margin: 0 1.5rem;    
+    transition: .2s;
 }
 
 .read-more-link:hover img,
 .read-more-link:focus img{
     filter: invert(52%) sepia(96%) saturate(963%) hue-rotate(336deg) brightness(102%) contrast(98%);
-    transition: .4s;
+    transition: .2s;
 }
 @media screen and (min-width: 48em) {
 
@@ -430,6 +437,13 @@ h3{
     border-radius: 50%;
     height: 21.8rem;
     width: 21.8rem;
+    transition: .5s;
+}
+
+.students-img:hover {
+  height: 23rem;
+  width: 23rem;
+  transition: .5s;
 }
 
 .students-card{
@@ -500,6 +514,11 @@ h3{
 .formation-card{
     box-shadow: 0px 0px 48px #00000029;
     border-radius: .4rem;
+    transition: .5s ease;
+}
+
+.formation-card:hover {
+  transform: translate(-10px, -20px);
 }
 
 .formation-group{
@@ -558,7 +577,7 @@ h3{
     text-decoration: none;
     color: var(--fond-color);
     padding: 1rem;
-    transition: .4s;
+    transition: .5s;
 }
 
 .mentions-text:hover,
@@ -574,7 +593,7 @@ h3{
 
 .social-img,
 .social-link{
-    transition: .4s;
+    transition: .5s;
 }
 
 .social-link:not(:nth-child(3)){
@@ -584,7 +603,7 @@ h3{
 .social-img:hover,
 .social-link:focus{
     filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(122deg) brightness(0%) contrast(100%);
-    transition: .4s;
+    transition: .5s;
 }
 
 @media screen and (min-width: 62em){
