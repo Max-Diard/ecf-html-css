@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>ECF HTML/CSS</title>
+		<link rel="stylesheet" href="css/base.css" />
+		<link rel="stylesheet" href="css/styles.css" />
+	</head>
+	<body>
+		<header class="main-header">
+			<div class="container">
+				<nav class="main-nav">
+					<p class="logo">dwwm</p>
+					<button class="toggle-menu" aria-expanded="false" aria-controls="menu"></button>
+					<ul id="menu" class="menu" role="list" hidden>
+						<li class="menu-item">
+							<a href="index.html" class="menu-link">Acceuil</a>
+						</li>
+						<li class="menu-item">
+							<a href="liste-formations.html" class="menu-link">La formation</a>
+						</li>
+						<li class="menu-item">
+							<a href="liste-students.html" class="menu-link">Les étudiants</a>
+						</li>
+						<li class="menu-item">
+							<a href="liste-actualites.html" class="menu-link">Actualités</a>
+						</li>
+						<li class="menu-item">
+							<span href="contact.html" class="menu-link current-page">Nous contacter</span>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+
+		<section class="formulaire-contact">
+			<div class="container">
+				<h2 class="form-title">Nous contacter</h2>
+				<form action="" class="contact-form">
+					<div class="form-group">
+						<label for="name">Nom</label>
+						<input class="contact-input" id="name" type ="text" name="name" placeholder="Entrez votre nom" required>
+					</div>
+					<div class="form-group">
+						<label for="email">Votre e-mail</label>
+						<input class="contact-input" type="email" id="email" name="email" placeholder="Entrez votre adresse e-mail" required>
+					</div>
+					<div class="form-group form-group-message">
+						<label for="message">Votre message</label>
+						<textarea class="contact-input contact-input-message" name="message" id="message" placeholder="Entrez votre message"></textarea>
+					</div>
+					<div class="form-group form-btn">
+						<button class="btn-send">
+							<p class="btn-text">Envoyer</p> 
+						</button>
+					</div>
+				</form>
+			</div>
+		</section>
+
+
+		<footer class="contact">
+			<div class="container">
+                <div class="contact-global">
+				<div class="adresse">
+					<p class="adresse-text">
+						Développeur Web et Web Mobile<br />
+						CEFIM<br />
+						32 Avenue Marcel Dassault<br />
+						37200 Tours<br />
+						T : 02 47 40 26 80
+					</p>
+				</div>
+				<div class="mentions">
+					<a href="confidentialites.html" class="mentions-text">Mentions Légales</a>
+					<a href="confidentialites.html" class="mentions-text">Politiques de confidentialité</a>
+				</div>
+				<div class="social-icons">
+					<a href="#" class="social-link">
+						<img
+							src="img/icon-facebook.svg"
+							alt="Icônes de Facebook"
+							class="social-img"
+						/>
+					</a>
+					<a href="#" class="social-link">
+						<img
+							src="img/icon-twitter.svg"
+							alt="Icône de Twitter"
+							class="social-img"
+						/>
+					</a>
+					<a href="#" class="social-link">
+						<img
+							src="img/icon-linkedin.svg"
+							alt="Icône de Linkedin"
+							class="social-img"
+						/>
+					</a>
+				</div>
+                </div>
+			</div>
+		</footer>
+		<script src="js/nav.js"></script>
+	</body>
+</html>

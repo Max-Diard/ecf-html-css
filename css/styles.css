@@ -66,6 +66,7 @@ h1{
     font-weight: 700;
     font-size: 3rem;
     line-height: 1.2;
+    text-align: left;
 }
 
 h2{
@@ -185,7 +186,6 @@ h3{
      border: 0;
 }
 
-
 .menu-link{
     display: block;
     padding: 1rem 2rem;
@@ -201,6 +201,11 @@ h3{
 
 .menu-link:hover,
 .menu-link:focus{
+    background-color: var(--fond-color);
+    color: var(--fond-section);
+}
+
+.current-page{
     background-color: var(--fond-color);
     color: var(--fond-section);
 }
@@ -348,6 +353,14 @@ h3{
     text-align: left;
 }
 
+.date-actu{
+    margin-top: 2.4rem;
+    margin-bottom: 1.6rem;
+    color: #663014;
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
 .date-actu:before{
     content: "";
     display: inline-flex;
@@ -357,49 +370,46 @@ h3{
     margin-right: .8rem;
 }
 
-.date-actu{
-    margin-top: 2.4rem;
-    margin-bottom: 1.6rem;
-    color: #663014;
-    font-size: 1.6rem;
-    line-height: 1.5;
-}
-
 .card-title{
     font-weight: 600;
 }
 
 .read-more-link{
+    text-decoration: none;
+    color: var(--primary-text);
+}
+
+.read-more-link-bottom{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
     margin-top: 2.4rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
     background-color: var(--fond-section);
     color: var(--fond-color);
-    text-decoration: none;
     transition: .2s;
 }
 
-.read-more-link:hover,
-.read-more-link:focus{
+.read-more-link-bottom:hover,
+.read-more-link-bottom:focus{
     background-color: var(--fond-color);
     color: var(--fond-section);    
     transition: .2s;
-}
+} 
 
 .arrow-more{
     margin: 0 1.5rem;    
     transition: .2s;
 }
 
-.read-more-link:hover img,
-.read-more-link:focus img{
-    filter: invert(52%) sepia(96%) saturate(963%) hue-rotate(336deg) brightness(102%) contrast(98%);
+.read-more-link-bottom:hover img,
+.read-more-link-bottom:focus img{
+    /* filter: invert(52%) sepia(96%) saturate(963%) hue-rotate(336deg) brightness(102%) contrast(98%); */
+    filter: invert(52%) sepia(96%) saturate(963%) contrast(98%);
     transition: .2s;
 }
+
 @media screen and (min-width: 48em) {
 
 }
@@ -409,7 +419,59 @@ h3{
     }
 }
 
-/* Les étudiants super cool */
+/* Page liste actualités (pas besoin) */
+
+/* Page focus une actu */
+
+.container-actu{
+    max-width: 84rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.actu-img{
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+.actu-img img{
+    width: 100%;
+}
+
+.actu-group {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.page-date-actu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    color: #663014;
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+.page-date-actu:before{
+    content: "";
+    display: inline-flex;
+    width: 1.6rem;
+    height: 1.8rem;
+    background-image: url(../img/icone-date.svg);
+    margin-right: .8rem;
+}
+
+.actu-text {
+    text-align: left;
+    padding-bottom: 4rem;
+}
+
+/* La section des étudiants super cool */
 
 .students{
     background-color: var(--fond-section);
@@ -430,7 +492,6 @@ h3{
     gap: 5rem;
     margin-top: 4rem;
     text-align: center;
-    margin-bottom: 4.3rem;
 }
 
 .students-img{
@@ -471,6 +532,40 @@ h3{
     background-color: var(--fond-color);
     color: var(--fond-section);
 }
+
+/* La page de la liste des étudiants */
+
+.page-list-students{
+    padding-top: 4rem;
+    padding-bottom: 9rem;
+}
+
+.page-list-students-more{
+    color: var(--fond-section);
+    font-size: 1.6rem;
+    line-height: 1.5;
+    padding: 1rem;
+    transition: .4s;
+}
+
+.page-list-students-more:hover,
+.page-list-students-more:focus{
+    background-color: var(--fond-section);
+    color: var(--fond-color);
+}
+
+.page-list-students-list-button{
+    display: flex;
+    justify-content: center;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 2.25;
+    height: 3rem;
+    margin-top: 4rem;
+}
+
+/* Respnsive pour la section des étudiants dans l'index et la page de la liste des étudiants */
+
 @media screen and (min-width: 36em){
     .students-list{
         grid-template-columns: repeat(2,1fr);
@@ -480,7 +575,6 @@ h3{
         width: 15rem;
     }
 }
-
 @media screen and (min-width: 62em) {
     .students-list{
         grid-template-columns: repeat(4,1fr);
@@ -493,11 +587,82 @@ h3{
         width: 21.8rem;
     }
 }
-/* Les modules au top */
+
+/* La page de présentation des étudiants */
+
+.presentation-students{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.presentation-title{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.presentation-students-img{
+    width: 21.8rem;
+    height: 21.8rem;
+}
+
+.presentation-students-title{
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    line-height: .6;
+}
+
+.group-like-students{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 4rem;
+}
+
+.like-students-title{
+    font-weight: 600;
+    font-size: 2.4rem;
+    margin-bottom: 2rem;
+}
+
+.like-baseline{
+    margin: auto;
+}
+
+.like-baseline-last{
+    font-size: 2.4rem;
+    line-height: 1.5;
+    margin-top: 2rem;
+}
+
+.group-like-last{
+    grid-column: 1/-1;
+}
+@media screen and (min-width: 36em){
+    .group-like-students{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .presentation-students-img{
+        width: 40.2rem;
+        height: 40.2rem;
+    }
+}
+@media screen and (min-width: 62em) {
+    .group-like-students{
+        grid-template-columns: repeat(4,1fr);
+    }
+}
+/* La section des modules */
 
 .modules-formation{
     padding-top: 4rem;
-    padding-bottom: 4rem;
+    padding-bottom: 9rem;
+}
+
+.modules-formation .container{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    align-items: center;
 }
 
 .formation-title{
@@ -506,6 +671,12 @@ h3{
 }
 
 .box-formation{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 3.2rem;
+}
+
+.box-list-formation{
     display: grid;
     grid-template-columns: repeat(1,1fr);
     gap: 3.2rem;
@@ -533,12 +704,100 @@ h3{
     font-weight: 600;
     line-height: 1.5;
 }
+
+/* La page de la liste des modules de formations */
+
+.modules-page-formation{
+    padding-top: 4rem;
+}
+
+.modules-page-formation .container{
+    display: flex;
+    justify-content: center;
+}
+
+.formation-baseline{
+    max-width: 84rem;
+    font-size: 1.8rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    margin-bottom: 4rem;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    align-items: center;
+}
+
+.list-button{
+    display: flex;
+    justify-content: center;
+    margin-top: 8rem;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 2.25;
+    height: 3rem;
+}
+
+.button-page{
+    border: 1px solid var(--fond-section);
+    border-radius: 5px;
+    background-color: var(--fond-color);
+    color: var(--fond-section);
+    margin-left: 1rem;
+    margin-right: 1rem;
+    height: 3rem;
+    width: 3rem; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+}
+
+.button-page:hover, 
+.button-page:focus{
+    background-color: var(--fond-section);
+    color: var(--fond-color);
+    transition: .3s;
+}
+
+/* La page du module HTML/CSS */
+
+.module-html{
+    background-image: url(..//img/module-html.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.module-html .container{
+    padding-top: 17.2rem;
+    padding-bottom: 17.2rem;
+    text-align: center;
+    font-family: "Raleway", sans-serif;
+    font-size: 4.8rem;
+    color: var(--fond-color);
+}
+
+@media (min-resolution: 144dpi){
+    .module-html{
+        background-image: url(../img/module-html@2x.jpg);
+    }
+}
+
+/* Responsive de la section des modules et la page des modules */
+
 @media screen and (min-width: 36em){
     .box-formation{
         grid-template-columns: repeat(2,1fr);
     }
 }
-
+@media screen and (min-width: 48em) {
+    .formation-baseline{
+        font-size: 2.4rem;
+    }
+    .box-list-formation{
+        grid-template-columns: repeat(2,1fr)
+    }
+}
 
 /* Footer */
 
@@ -603,7 +862,6 @@ h3{
 .social-img:hover,
 .social-link:focus{
     filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(122deg) brightness(0%) contrast(100%);
-    transition: .5s;
 }
 
 @media screen and (min-width: 62em){
@@ -616,5 +874,97 @@ h3{
     }
     .social-link{
         margin-right: 6rem;
+    }
+}
+
+/* Politique de confidentialité */
+
+.confidentialite{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+.confidentialite-title{
+    text-align: center;
+    padding-bottom: 4rem;
+}
+
+/* Page de contact */
+
+.formulaire-contact{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.form-title{
+    text-align: center;
+    padding-bottom: 14.1rem;
+}
+
+.contact-form{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    column-gap: 3.2rem;
+    row-gap: 2rem;
+    max-width: 105.8rem;
+    margin: auto;
+}
+
+label{
+    padding-bottom: 2rem;
+}
+
+.contact-input{
+    border: 0;
+    border-bottom: 1px solid #707070;
+    width: 100%;
+}
+
+.contact-input::placeholder{
+    color: #33110080;
+    font-style: italic;
+    height: 12rem;
+}
+
+.form-group-message{
+    grid-column: 1/-1;
+    margin-top: 2.2rem;
+}
+
+.contact-input-message{
+    height: 20rem;
+}
+
+.form-btn{
+    grid-column: -2/-1;
+    text-align: right;
+}
+
+.btn-send{
+    background-color: var(--fond-section);
+    color: var(--fond-color);
+    border: 0;
+    border-radius: 4px;
+    padding: .5rem .5rem;
+}
+.btn-text{
+    display: flex;
+    align-items: center;
+}
+
+.btn-text::after{
+    content: "";
+    display: inline-flex;
+    width: 2.2rem;
+    height: 2.2rem;
+    background-image: url(../img/icon-arrow-right-circle-1.svg);
+    margin-left: 2rem;
+}
+
+@media screen and (min-width: 48em){
+    .contact-form{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .btn-send{
+        padding: 1rem 2rem;
     }
 }
