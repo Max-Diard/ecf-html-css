@@ -273,6 +273,7 @@ h3{
     max-width: 95.6rem;
     color: var(--fond-color);
     padding-top: 2.3rem;
+    padding-left: 1rem;
     background-color: #00000080;
 }
 
@@ -284,7 +285,7 @@ h3{
     font-size: 1.5rem;
     font-weight: 600;
     line-height: 0.9;
-    padding: 2rem 3rem;
+    padding: 1.5rem 1rem;
     margin-top: 3rem;
     margin-bottom: 3rem;
     transition: .4s;
@@ -312,6 +313,7 @@ h3{
 }
     .cta{
         font-size: 4rem;
+        padding: 2rem 3rem;
     }
 }
 
