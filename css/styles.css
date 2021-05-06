@@ -314,6 +314,7 @@ h3{
     .cta{
         font-size: 4rem;
         padding: 2rem 3rem;
+        margin-right: 2.8rem;
     }
 }
 
@@ -339,10 +340,23 @@ h3{
     box-shadow: 0px 0px 48px #00000029;
     border-radius: .4rem;
     transition: .5s ease;
+    position: relative;
 }
 
 .card-actu:hover{
     transform: translate(-10px, -20px);
+}
+
+.card-actu:hover .read-more-link-bottom,
+.card-actu:focus .read-more-link-bottom{
+    background-color: var(--fond-color);
+    color: var(--fond-section);
+}
+.card-actu:hover .read-more-link-bottom img,
+.card-actu:focus .read-more-link-bottom img{
+    /* filter: invert(52%) sepia(96%) saturate(963%) hue-rotate(336deg) brightness(102%) contrast(98%); */
+    filter: invert(52%) sepia(96%) saturate(963%) contrast(98%);
+    transition: .2s;
 }
 
 .card-img img{
@@ -379,7 +393,17 @@ h3{
 .read-more-link{
     text-decoration: none;
     color: var(--primary-text);
+    position: absolute;
+    top:0;
+    bottom:0;
+    right:0;
+    left:0;
 }
+
+.read-more-link:focus{
+    outline: .2em solid var(--fond-section);
+}
+
 
 .read-more-link-bottom{
     display: flex;
@@ -393,28 +417,11 @@ h3{
     transition: .2s;
 }
 
-.read-more-link-bottom:hover,
-.read-more-link-bottom:focus{
-    background-color: var(--fond-color);
-    color: var(--fond-section);    
-    transition: .2s;
-} 
-
 .arrow-more{
     margin: 0 1.5rem;    
     transition: .2s;
 }
 
-.read-more-link-bottom:hover img,
-.read-more-link-bottom:focus img{
-    /* filter: invert(52%) sepia(96%) saturate(963%) hue-rotate(336deg) brightness(102%) contrast(98%); */
-    filter: invert(52%) sepia(96%) saturate(963%) contrast(98%);
-    transition: .2s;
-}
-
-@media screen and (min-width: 48em) {
-
-}
 @media screen and (min-width: 62em) {
     .box-actu{
         grid-template-columns: repeat(3, 1fr);
@@ -504,8 +511,7 @@ h3{
 }
 
 .students-img:hover {
-  height: 23rem;
-  width: 23rem;
+  transform: scale(1.1);
   transition: .5s;
 }
 
@@ -688,10 +694,25 @@ h3{
     box-shadow: 0px 0px 48px #00000029;
     border-radius: .4rem;
     transition: .5s ease;
+    position: relative;
 }
 
-.formation-card:hover {
-  transform: translate(-10px, -20px);
+.formation-card:hover{
+  transform: translate(-10px, -20px); 
+}
+
+/* Obliger de faire ça pour le focus */
+
+.formation-card:hover .read-more-link-bottom,
+.formation-card:focus .read-more-link-bottom{
+    background-color: var(--fond-color);
+    color: var(--fond-section);
+}
+.formation-card:hover .read-more-link-bottom img,
+.formation-card:focus .read-more-link-bottom img{
+    /* filter: invert(52%) sepia(96%) saturate(963%) hue-rotate(336deg) brightness(102%) contrast(98%); */
+    filter: invert(52%) sepia(96%) saturate(963%) contrast(98%);
+    transition: .2s;
 }
 
 .formation-group{
@@ -948,18 +969,29 @@ label{
     border-radius: 4px;
     padding: .5rem .5rem;
 }
+
 .btn-text{
     display: flex;
     align-items: center;
 }
 
-.btn-text::after{
-    content: "";
-    display: inline-flex;
-    width: 2.2rem;
-    height: 2.2rem;
-    background-image: url(../img/icon-arrow-right-circle-1.svg);
-    margin-left: 2rem;
+.btn-send:hover,
+.btn-send:focus{
+    background-color: var(--fond-color);
+    color: var(--fond-section);    
+    transition: .2s;
+} 
+
+.arrow-more-contact{
+    margin-left: 1.5rem;
+    transition: .2s;
+}
+
+.btn-send:hover img,
+.btn-send:focus img{
+    /* filter: invert(52%) sepia(96%) saturate(963%) hue-rotate(336deg) brightness(102%) contrast(98%); */
+    filter: invert(52%) sepia(96%) saturate(963%) contrast(98%);
+    transition: .2s;
 }
 
 @media screen and (min-width: 48em){
