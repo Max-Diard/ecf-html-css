@@ -637,7 +637,7 @@ h3{
 }
 
 .like-baseline-last{
-    font-size: 2.4rem;
+    font-size: 1.7rem;
     line-height: 1.5;
     margin-top: 2rem;
 }
@@ -652,6 +652,9 @@ h3{
     .presentation-students-img{
         width: 40.2rem;
         height: 40.2rem;
+    }
+    .like-baseline-last{
+        font-size: 2.4rem;
     }
 }
 @media screen and (min-width: 62em) {
@@ -906,10 +909,22 @@ h3{
     padding-top: 4rem;
     padding-bottom: 4rem;
 }
+
+.confidentialite .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .confidentialite-title{
     text-align: center;
     padding-bottom: 4rem;
 }
+
+.confidentialite-text{
+    max-width: 84rem;
+}
+
 
 /* Page de contact */
 
@@ -920,7 +935,7 @@ h3{
 
 .form-title{
     text-align: center;
-    padding-bottom: 14.1rem;
+    padding-bottom: 6rem;
 }
 
 .contact-form{
@@ -940,6 +955,7 @@ label{
     border: 0;
     border-bottom: 1px solid #707070;
     width: 100%;
+    margin-top: 2rem;
 }
 
 .contact-input::placeholder{
@@ -1000,5 +1016,8 @@ label{
     }
     .btn-send{
         padding: 1rem 2rem;
+    }
+    .form-title{
+        padding-bottom: 14.1rem;
     }
 }
