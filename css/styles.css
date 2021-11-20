@@ -91,14 +91,14 @@ h3{
     padding-right: 1.5rem;
 }
 
-/* Taille d'écran jusqu'à 576px */
+/* Taille d'écran à partir 576px */
 @media screen and (min-width: 36em) {
      .container{
           max-width: 54.6rem;
      }
 }
 
-/* Taille d'écran jusqu'à 768px */
+/* Taille d'écran à partir 768px */
 @media screen and (min-width: 48em) {
      .container{
           max-width: 73.8rem;
@@ -117,7 +117,7 @@ h3{
      }
 }
 
-/* Taille d'écran jusqu'à 992px */
+/* Taille d'écran à partir 992px */
 @media screen and (min-width: 62em) {
      .container{
           max-width: 96.2rem
@@ -127,7 +127,7 @@ h3{
      }
 }
 
-/* Taille d'écran jusqu'à 1200px */
+/* Taille d'écran à partir 1200px */
 @media screen and (min-width: 75em) {
      .container{
 	     max-width: 127.6rem;
@@ -214,7 +214,7 @@ h3{
     color: var(--fond-section);
 }
 
-/* Taille d'écran jusqu'à 768px */
+/* Taille d'écran à partir 768px */
 @media screen and (min-width: 48em) {
     .toggle-menu{
         display: none;
@@ -233,7 +233,7 @@ h3{
    }
 }
 
-/* Taille d'écran jusqu'à 992px */
+/* Taille d'écran à partir 992px */
 @media screen and (min-width: 62em) {
     .menu{
         justify-content: space-between;
@@ -305,14 +305,14 @@ h3{
     color: var(--fond-section);
 }
 
-/* Taille d'écran jusqu'à 768px */
+/* Taille d'écran à partir 768px */
 @media screen and (min-width: 48em) {
     .cta{
         font-size: 3rem;
     }
 }
 
-/* Taille d'écran jusqu'à 992px */
+/* Taille d'écran à partir 992px */
 @media screen and (min-width: 62em) {
     .hero .container{
         justify-content: flex-end;
@@ -433,7 +433,7 @@ h3{
     transition: .2s;
 }
 
-/* Taille d'écran jusqu'à 992px */
+/* Taille d'écran à partir 992px */
 @media screen and (min-width: 62em) {
     .box-actu{
         grid-template-columns: repeat(3, 1fr);
@@ -585,7 +585,7 @@ h3{
 }
 
 /* Respnsive pour la section des étudiants dans l'index et la page de la liste des étudiants */
-/* Taille d'écran jusqu'à 576px */
+/* Taille d'écran à partir 576px */
 @media screen and (min-width: 36em){
     .students-list{
         grid-template-columns: repeat(2,1fr);
@@ -596,7 +596,7 @@ h3{
     }
 }
 
-/* Taille d'écran jusqu'à 768px */
+/* Taille d'écran à partir 768px */
 @media screen and (min-width: 62em) {
     .students-list{
         grid-template-columns: repeat(4,1fr);
@@ -604,7 +604,7 @@ h3{
     }
 }
 
-/* Taille d'écran jusqu'à 992px */
+/* Taille d'écran à partir 992px */
 @media screen and (min-width: 75em) {
     .students-img{
         height: 21.8rem;
@@ -662,7 +662,7 @@ h3{
     grid-column: 1/-1;
 }
 
-/* Taille d'écran jusqu'à 576px */
+/* Taille d'écran à partir 576px */
 @media screen and (min-width: 36em){
     .group-like-students{
         grid-template-columns: repeat(2,1fr);
@@ -676,7 +676,7 @@ h3{
     }
 }
 
-/* Taille d'écran jusqu'à 992px */
+/* Taille d'écran à partir 992px */
 @media screen and (min-width: 62em) {
     .group-like-students{
         grid-template-columns: repeat(4,1fr);
@@ -832,14 +832,14 @@ h3{
 }
 
 /* Responsive de la section des modules et la page des modules */
-/* Taille d'écran jusqu'à 576px */
+/* Taille d'écran à partir 576px */
 @media screen and (min-width: 36em){
     .box-formation{
         grid-template-columns: repeat(2,1fr);
     }
 }
 
-/* Taille d'écran jusqu'à 768px */
+/* Taille d'écran à partir 768px */
 @media screen and (min-width: 48em) {
     .formation-baseline{
         font-size: 2.4rem;
@@ -914,7 +914,7 @@ h3{
     filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(122deg) brightness(0%) contrast(100%);
 }
 
-/* Taille d'écran jusqu'à 768px */
+/* Taille d'écran à partir 768px */
 @media screen and (min-width: 62em){
     .contact-global{
         flex-direction: row;
@@ -1035,7 +1035,7 @@ label{
     transition: .2s;
 }
 
-/* Taille d'écran jusqu'à 768px */
+/* Taille d'écran à partir 768px */
 @media screen and (min-width: 48em){
     .contact-form{
         grid-template-columns: repeat(2,1fr);
